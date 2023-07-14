@@ -28,46 +28,80 @@
         <br> <!-- Submit-->
         <form action="myserver.com" method="POST">
               …
-            <input type="submit" value="Submit" />
-            </form> <br>
+        <input type="submit" value="Submit" />
+        </form> <br>
 
-            <br> <!-- Single line text-->
-            <label for="fname">First name:</label> 
-            <input type="text" id="fname" name="fname"><br>
+        <br> <!-- Single line text-->
+        <label for="fname">First name:</label> 
+        <input type="text" id="fname" name="fname"><br>
 
-            <br> <!-- Password-->
-            <label for="pwd">Password:</label> 
-            <input type="password" id="pwd" name="pwd"><br>
+        <br> <!-- Password-->
+        <label for="pwd">Password:</label> 
+        <input type="password" id="pwd" name="pwd"><br>
 
-            <br> <!-- Date-->
-            <label for="dob">Date of birth:</label>
-            <input type="date" id="dob" name="date of birth"><br>
+        <br> <!-- Date-->
+        <label for="dob">Date of birth:</label>
+        <input type="date" id="dob" name="date of birth"><br>
 
-            <br> <!--Date and Time-->
-            <label for="birthdaytime">Birthday (date and time):</label>
-            <input type="datetime-local" id="birthdaytime" name="birthdaytime"><br>
+        <br> <!--Date and Time-->
+        <label for="birthdaytime">Birthday (date and time):</label>
+        <input type="datetime-local" id="birthdaytime" name="birthdaytime"><br>
 
-            <br> <!-- Email (similar to the single line text. It differs by validating automatically when submitted to the server)-->
-            <label for="email">Enter your email:</label>
-            <input type="email" id="email" name="email"><br>
+        <br> <!-- Email (similar to the single line text. It differs by validating automatically when submitted to the server)-->
+        <label for="email">Enter your email:</label>
+        <input type="email" id="email" name="email"><br>
 
-            <br> <!-- File-->
-            <label for="myfile">Select a file:</label>
-            <input type="file" id="myfile" name="myfile"><br>
+        <br> <!-- File-->
+        <label for="myfile">Select a file:</label>
+        <input type="file" id="myfile" name="myfile"><br>
 
-            <br> <!-- To accept only image file-->
-            <label for="myfile">Select an image file:</label>
-            <input type="file" id="myfile" name="myfile" accept="image/*"><br>
+        <br> <!-- To accept only image file-->
+        <label for="myfile">Select an image file:</label>
+        <input type="file" id="myfile" name="myfile" accept="image/*"><br>
 
-            <br> <!-- To select multiple files-->
-            <label for="myfile">Select multiple files:</label>
-            <input type="file" id="myfile" name="myfile" multiple><br>
+        <br> <!-- To select multiple files-->
+        <label for="myfile">Select multiple files:</label>
+        <input type="file" id="myfile" name="myfile" multiple><br>
 
-            <br> <!-- Defines a control that is not displayed but whose value is still submitted to the server-->
-            <input type="hidden" id="custId" name="custId" value="3487"><br>
+        <br> <!-- Defines a control that is not displayed but whose value is still submitted to the server-->
+        <input type="hidden" id="custId" name="custId" value="3487"><br>
 
-            <br> <!-- Image-->
-            <input type="image"src="https://res.cloudinary.com/demo/basketball_shot.jpg" alt="Submit" width="48" height="48">
+        <br> <!-- Image-->
+        <input type="image"src="https://res.cloudinary.com/demo/basketball_shot.jpg" alt="Submit" width="48" height="48"><br>
+
+        <br> <!-- Number-->
+        <input type="number" id="quantity" name="quantity" min="1" max="5"><br>
+
+        <br> <!-- Range-->
+        <label for="volume">Volume:</label>
+        <input type="range" id="volume" name="volume" min="0" max="10"><br>
+
+        <br> <!-- Reset (Displays a button that resets the contents of the form to their default values)-->
+        <input type="reset"><br>
+
+        <br> <!-- Search-->
+        <label for="gsearch">Search in Google:</label>
+        <input type="search" id="gsearch" name="gsearch"><br>
+
+        <br> <!-- Time (Displays a control for entering a time value in hours and minutes, with no time zone.)-->
+        <label for="appt">Select a time:</label>
+        <input type="time" id="appt" name="appt"><br>
+
+        <br> <!--Phone Number-->
+        <label for="phone">Enter your phone number:</label>
+        <input type="tel" id="phone" name="phone" pattern="[+]{1}[0-9]{11,14}"><br>
+
+        <br> <!-- Week-->
+        <label for="week">Select a week:</label>
+        <input type="week" id="week" name="week"><br>
+
+        <br> <!-- URL-->
+        <label for="homepage">Add your homepage:</label>
+        <input type="url" id="homepage" name="homepage"><br>
+
+        <br>
+        <label for="bdaymonth">Birthday (month and year):</label>
+        <input type="month" id="bdaymonth" name="bdaymonth" min="1930-01" value="2000-01">
 
 
 
