@@ -5,9 +5,72 @@
     </head>
 
     <body>
+        <input type="button" value="Click me" onclick="msg()" /> <br>
+
+        <br> <!--Button-->
         <button onclick="alert('Are you sure you want to continue?')"> 
             <img src="https://res.cloudinary.com/demo/basketball_shot.jpg" 
                 alt="Submit the form" height="64" width="64">
-        </button> 
+        </button> <br>
+
+         <br> <!-- Checkbox -->
+        <input type="checkbox" id="dog" name="dog" value="Dog">
+        <label for="dog">I like dogs</label>
+        <input type="checkbox" id="cat" name="cat" value="Cat">
+        <label for="cat">I like cats</label><br>
+
+        <br><!-- Radio (You can only choose one)-->
+        <input type="radio" id="light" name="theme" value="Light"> 
+        <label for="light">Light</label> 
+        <input type="radio" id="dark" name="theme" value="Dark"> 
+        <label for="dark">Dark</label> <br>
+
+        <br> <!-- Submit-->
+        <form action="myserver.com" method="POST">
+              …
+            <input type="submit" value="Submit" />
+            </form> <br>
+
+            <br> <!-- Single line text-->
+            <label for="fname">First name:</label> 
+            <input type="text" id="fname" name="fname"><br>
+
+            <br> <!-- Password-->
+            <label for="pwd">Password:</label> 
+            <input type="password" id="pwd" name="pwd"><br>
+
+            <br> <!-- Date-->
+            <label for="dob">Date of birth:</label>
+            <input type="date" id="dob" name="date of birth"><br>
+
+            <br> <!--Date and Time-->
+            <label for="birthdaytime">Birthday (date and time):</label>
+            <input type="datetime-local" id="birthdaytime" name="birthdaytime"><br>
+
+            <br> <!-- Email (similar to the single line text. It differs by validating automatically when submitted to the server)-->
+            <label for="email">Enter your email:</label>
+            <input type="email" id="email" name="email"><br>
+
+            <br> <!-- File-->
+            <label for="myfile">Select a file:</label>
+            <input type="file" id="myfile" name="myfile"><br>
+
+            <br> <!-- To accept only image file-->
+            <label for="myfile">Select an image file:</label>
+            <input type="file" id="myfile" name="myfile" accept="image/*"><br>
+
+            <br> <!-- To select multiple files-->
+            <label for="myfile">Select multiple files:</label>
+            <input type="file" id="myfile" name="myfile" multiple><br>
+
+            <br> <!-- Defines a control that is not displayed but whose value is still submitted to the server-->
+            <input type="hidden" id="custId" name="custId" value="3487"><br>
+
+            <br> <!-- Image-->
+            <input type="image"src="https://res.cloudinary.com/demo/basketball_shot.jpg" alt="Submit" width="48" height="48">
+
+
+
     </body>
 </html>
+
