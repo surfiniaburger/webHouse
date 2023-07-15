@@ -18,8 +18,48 @@
     <img src="logo.png">
   </header>
   <main>
-    
+    <iframe src="placeholder.png" width="320" height="128" sandbox allow="payment 'none';camera 'none';microphone 'none'"></iframe>
+    <h1>About</h1>
+    <video width="320" height="240" controls muted>
+        <source src="video.mp4" type="video/mp4">
+    </video>
+    <p>Little Lemon is a family-owned Mediterranean restaurant, focused on traditional recipes served with a modern twist</p>
+    <audio loop controls>
+       <source src="music.ogg" type="audio/ogg"> 
+    </audio>
   </main>
+
+<!-- An illustration-->
+  <video width="320" height="240" controls>
+    <source src="video.mp4" type="video/mp4">
+  </video>
+  <form>
+    <div>
+      <label for="rating">Rating</label>
+        <input type="range" id="rating" name="rating" min="1" max="5" list="ratings">
+        <datalist id="ratings">
+          <option value="1" label="1" ></option>
+          <option value="2"></option>
+          <option value="3"></option>
+          <option value="4"></option>
+          <option value="5" label="5"></option>
+        </datalist>
+
+      
+    </div>
+
+    <button type="submit">Submit Rating</button>
+  </form>
+
+  <figure> <!--Image with description-->
+    <img src="photo.png" width="320" alt="My Profile Photo"> 
+    <figcaption>A photo of myself on a beach in 2015</figcaption> 
+ </figure>
+
+ <canvas width="640" height="480" id="my_canvas">
+
+ </canvas>
+ <script src="animation.js"></script>
 </body>
 
 </html>
