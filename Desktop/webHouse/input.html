@@ -136,6 +136,53 @@
             <button type="submit">Book table</button>
         </form>
 
+
+        <!--Using datalist, you provide suggestions that users may or may not select. With the input filed, they are free to add their response. -->
+        <form method="POST">
+          <div>
+            <label for="booking_date">Booking Date</label>
+            <input type="date" id="booking_date" name="booking_date">
+          </div>
+          
+          <div>
+            <label for="booking_people">Number of People</label>
+            <input type="range" id="booking_people" name="booking_people" min="1" max="10" value="4" oninput="this.nextElementSibling.value = this.value">
+            <output>4</output>
+          </div>
+
+          <div>
+            <label for="booking_location">location</label>
+            <input id="booking_location" name="booking_location" list="locations">
+            <datalist id="locations">
+                <option value="Downtown"></option>
+                <option value="Uptown"></option>
+            </datalist>
+          </div>
+          <button type="submit">Book table</button>
+        </form>
+
+        <form><!--Some more of the same-->
+            <div>
+                <label for="email_address">Email Address</label>
+                <input type="email" id="email_address" name="email_address">
+            </div>
+            <div>
+                <label for="booking_date">Date of Booking</label>
+                <input type="date" id="booking_date" name="booking_date">   
+            </div>
+            <div>
+                <label for="people">Number of people</label>
+                <input type="number" id="people" min="1" max="8" name="people">        
+            </div>
+            <div>
+                <label>
+                    <input type="checkbox" id="agree" name="agree" required> 
+                    I agree to the cancellation policy
+                </label>
+            </div>
+            <button type="submit">Book Now</button>
+        </form>
+
     </body>
 </html>
 
