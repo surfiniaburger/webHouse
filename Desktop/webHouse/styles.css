@@ -1,0 +1,32 @@
+/* CSS for the .box class */
+.box {
+    /* Set the background color of the box to aquamarine */
+    background-color: aquamarine;
+
+    /* Add a border radius of 5 pixels to give the box rounded corners */
+    border-radius: 5px;
+
+    /* Add a margin of 2 pixels around the box, creating some spacing between boxes */
+    margin: 2px;
+
+    /* Add padding of 10 pixels inside the box, creating some space between the content and the box edges */
+    padding: 10px;
+}
+
+/* CSS for the .flex-container class */
+.flex-container {
+    /* Display the container as a flex container */
+    display: flex;
+
+    /* Center the flex items horizontally within the container */
+    justify-content: center;
+
+    /* Allow flex items to wrap to the next line if there is not enough space horizontally */
+    flex-wrap: wrap;
+
+    /* Arrange the flex items vertically in a column */
+    flex-direction: column;
+
+    /* Align the flex items to the end of the container vertically */
+    align-items: flex-end;
+}
