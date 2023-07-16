@@ -5,6 +5,23 @@
 
 .textual:hover{
     box-shadow: 5px 0px 25px black;
-    transform: rotateZ(180deg);
-    transition: 3s;
+    
+}
+
+.box {
+    display: grid;
+    width: 240px;
+    height: 240px;
+    margin: 100px;
+    background-color: rgba(55, 255, 5, 0.5);
+    border-radius: 12px ;
+    border: solid 6feb6f 4px;
+}
+
+
+.box:hover{
+    transform: rotateZ(60deg);
+    background-color: green;
+    opacity: 50%;
+    transition: 2s;
 }
